@@ -1,0 +1,24 @@
+addbird --name parrot --color red --height 2cm --weight 120
+addbird --name parrot1 --color black --height 5cm --weight 130
+addbird --name bird1 --color black --height 5cm --weight 130
+addbird --name parrot2 --color white --height 6cm --weight 100
+addbird --name bird2 --color black --height 5cm --weight 130
+addbird --name parrot3 --color blue --height 7cm --weight 233
+addbird --name parrot4 --color yellow --height 2cm --weight 125
+
+listbirds
+
+addsighting --bird-name parrot --location region1 --date 2017.09.01 --time 14:02:44
+addsighting --bird-name parrot1 --location region1 --date 2017.09.01 --time 14:02:44
+addsighting --bird-name parrot2 --location region1 --date 2017.09.01 --time 14:02:44
+addsighting --bird-name parrot --location region2 --date 2017.08.01 --time 14:02:34
+addsighting --bird-name parrot1 --location region2 --date 2017.08.01 --time 15:12:44
+addsighting --bird-name parrot2 --location region2 --date 2017.08.01 --time 16:22:54
+
+listsightings --bird-name parrot --start-date '2017.06.01 14:02:44' --end-date '2017.10.01 14:02:44'
+listsightings --bird-name parrot --start-date '2017.06.01 14:02:44' --end-date '2017.08.05 14:02:44'
+listsightings --bird-name parrot --start-date '2017.08.10 14:02:44' --end-date '2017.09.05 14:02:44'
+listsightings --bird-name parrot --start-date '2016.08.10 14:02:44' --end-date '2016.09.05 14:02:44'
+listsightings --bird-name 'parr[a-z0-9]+' --start-date '2015.08.10 14:02:44' --end-date '2018.09.05 14:02:44'
+
+remove --name parrot
