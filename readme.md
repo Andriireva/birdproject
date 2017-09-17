@@ -1,11 +1,11 @@
-##Bird Application
+## Bird Application
 How to run and use application
 - Requirements to use the application:
   - Java 8
   - Maven
 - Compile: `mvn clean install`
 ____
-###Server side
+### Server side
 - run `mvn bird-server\pom.xml spring-boot:run "-Drun.arguments=[-port <port>],[-data <data>],[-proc_count <proc_count>]"`
 - Parameters
   - **port**: positive value, default value is `3000`. Parameter is `optional`
@@ -13,13 +13,13 @@ ____
   - **proc_count**: positive value, default value is `2`. Parameter is `optional`
 - Simple run: `mvn bird-server\pom.xml spring-boot:run`
 ____
-###Client side
+### Client side
 - run `java -jar bird-client/target/bird-client-1.0-SNAPSHOT.jar [-serverPort <port>]`
 - parameters
   - **serverPort**: positive value, default value is `3000`. Parameter is `optional`
 - Simple run: `java -jar bird-client/target/bird-client-1.0-SNAPSHOT.jar`
 
-####Command Examples
+#### Command Examples
 - addbird command:
   - addbird --name parrot --color red --height 2cm --weight 120
   - addbird --name parrot1 --color black --height 5cm --weight 130
