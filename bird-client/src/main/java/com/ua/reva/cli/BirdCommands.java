@@ -59,7 +59,7 @@ public class BirdCommands {
         headers.put("height", "Height");
         TableModel model = new BeanListTableModel(birds, headers);
         TableBuilder tableBuilder = new TableBuilder(model);
-        return tableBuilder.addFullBorder(BorderStyle.fancy_light).build().render(0) +
+        return tableBuilder.build().render(150) +
                 "\n" +
                 "Total birds: " + birds.size();
     }
